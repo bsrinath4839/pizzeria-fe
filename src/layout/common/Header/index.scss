@@ -1,0 +1,98 @@
+.Header {
+    height: 3.5em;
+    background-color: black;
+    color: #edfefd;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.3em 1em;
+    display: flex;
+    align-items: center;
+    .div-logo {
+        a {
+            display: flex;
+            align-items: center;
+            color: #edfefd;
+            text-decoration: none;
+            .logo {
+                width: 2em;
+                height: auto;
+                margin: 0 0.5em;
+            }
+        }
+    }
+    .links {
+        a {
+            color: #edfefd;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        a:hover {
+            border-bottom: 1px solid #edfefd;
+        }
+        a:active {
+            border-bottom: 1px solid #edfefd;
+        }
+    }
+    .interrupt{
+        flex: 1;
+    }
+    .div-cart-button{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .Header {
+        height: 5em;
+        background-color: black;
+        color: #edfefd;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0.3em 1em;
+        display: flex;
+        align-items: center;
+        .div-logo {
+            a {
+                display: flex;
+                align-items: center;
+                color: #edfefd;
+                text-decoration: none;
+                .logo {
+                    width: 2em;
+                    height: auto;
+                    margin: 0 0.5em;
+                }
+            }
+        }
+        .links {
+            a {
+                color: #edfefd;
+                text-decoration: none;
+                margin: 0 1em;
+            }
+            a:hover {
+                border-bottom: 1px solid #edfefd;
+            }
+            a:active {
+                border-bottom: 1px solid #edfefd;
+            }
+        }
+        .interrupt{
+            flex: 1;
+        }
+        .div-cart-button{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    
+}

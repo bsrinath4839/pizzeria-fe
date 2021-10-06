@@ -1,0 +1,96 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .pizza {
+        font-family: "Open Sans", serif;
+        background-color: white;
+        outline: none;
+        border-radius: 1em;
+        padding: 0 1em 1em 1em;
+        box-sizing: border-box;
+        width: 30em;
+        overflow-y : scroll;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            height: 0;
+            width: 0;
+            background: transparent;
+        }
+        .btn-close {
+            text-align: right;
+            button {
+                border: none;
+                outline: none;
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+        .title-bar{
+            padding: 1em;
+            position:sticky;
+            top: 0;
+            background-color: white;
+            margin: 0;
+            border-bottom: 1px solid #eee;
+        }
+        .modal-title {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #55678b;
+            text-transform: uppercase;
+        }
+
+    }
+}
+
+@media screen and (max-width:700px){
+    .modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .pizza {
+            font-family: "Open Sans", serif;
+            background-color: white;
+            outline: none;
+            border-radius: 1em;
+            padding: 0 1em 1em 1em;
+            box-sizing: border-box;
+            height: 35em;
+            width: 30em;
+            overflow-y : scroll;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                height: 0;
+                width: 0;
+                background: transparent;
+            }
+            .btn-close {
+                text-align: right;
+                button {
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    cursor: pointer;
+                }
+            }
+            .title-bar{
+                padding: 1em;
+                position:sticky;
+                top: 0;
+                background-color: white;
+                margin: 0;
+                border-bottom: 1px solid #eee;
+            }
+            .modal-title {
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: 700;
+                color: #55678b;
+                text-transform: uppercase;
+            }
+    
+        }
+    }   
+}

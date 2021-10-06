@@ -1,0 +1,92 @@
+@media only screen and (min-width: 1000px) {
+    .App {
+        margin: 0 15em;
+        font-size: 1em;
+    }
+    $Index: 100;
+    @while $Index > 0 {
+        .fs-#{$Index} {
+            font-size: $Index + unquote($string: "em");
+        }
+        .lh-#{$Index} {
+            line-height: $Index + unquote($string: "px");
+        }
+        $Index: $Index - 0.1;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .App {
+        margin: 0;
+        font-size: 0.5em;
+    }
+}
+
+$Index: 100;
+@while $Index > 0 {
+    .pd-#{$Index} {
+        padding: $Index + unquote($string: "%");
+    }
+    .pd-tp-#{$Index} {
+        padding-top: $Index + unquote($string: "%");
+    }
+    .pd-lt-#{$Index} {
+        padding-left: $Index + unquote($string: "%");
+    }
+    .pd-bt-#{$Index} {
+        padding-bottom: $Index + unquote($string: "%");
+    }
+    .pd-rt-#{$Index} {
+        padding-right: $Index + unquote($string: "%");
+    }
+    .mr-#{$Index} {
+        margin: $Index + unquote($string: "%");
+    }
+    .mr-tp-#{$Index} {
+        margin-top: $Index + unquote($string: "%");
+    }
+    .mr-lt-#{$Index} {
+        margin-left: $Index + unquote($string: "%");
+    }
+    .mr-bt-#{$Index} {
+        margin-bottom: $Index + unquote($string: "%");
+    }
+    .mr-rt-#{$Index} {
+        margin-right: $Index + unquote($string: "%");
+    }
+    $Index: $Index - 1;
+}
+$Index: 100;
+@while $Index > 0 {
+    .w-#{$Index} {
+        width: $Index + unquote($string: "%");
+    }
+    .h-#{$Index} {
+        height: $Index + unquote($string: "%");
+    }
+    $Index: $Index - 1;
+}
+
+.bdr-box {
+    box-sizing: border-box;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.flex {
+    display: flex;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
